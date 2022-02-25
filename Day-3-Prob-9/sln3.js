@@ -4,6 +4,8 @@ var isPalindrome = function(x) {
   }
   let digits = x.toString().split('');
   let realDigits = digits.map(Number);
+  console.log(digits);
+  console.log(realDigits);
 
   if(x.toString().length%2 == 0) {
     const half = Math.ceil(realDigits.length / 2);    
