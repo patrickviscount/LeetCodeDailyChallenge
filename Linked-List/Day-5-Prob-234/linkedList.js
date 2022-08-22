@@ -10,6 +10,11 @@ class Node {
     constructor() {
       this.head = null;
     }
+
+    //tester
+    static test() {
+      console.log("Linked!");
+    }
   
     // Add a value at beginning of list
     addStart(value) {
@@ -46,3 +51,5 @@ class Node {
   console.log(head.value);
   head = head.next;
   }
+
+  module.exports = LinkedList;

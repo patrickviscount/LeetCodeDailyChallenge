@@ -1,6 +1,8 @@
 //Given the head of a singly linked list, return true if it is a palindrome. 
 //ex. [1,2,2,1] = true, [2,4,6,1] = false
 
+import LinkedList from "./linkedList.js"
+
 var isPalindrome = function(head) {
 
   //for linked list implementations
@@ -20,7 +22,7 @@ var isPalindrome = function(head) {
     const secondHalf = arr.slice(-half);
     secondHalf.reverse();
     let count = 0;
-    for (i = 0; i < firstHalf.length; i++){
+    for (let i = 0; i < firstHalf.length; i++){
       if (firstHalf[i] == secondHalf[i]){
         count++;
       }
@@ -37,7 +39,7 @@ var isPalindrome = function(head) {
     const secondHalf = arr.slice(-half);
     secondHalf.reverse();
     let count = 0;
-    for (i = 0; i < firstHalf.length; i++){
+    for (let i = 0; i < firstHalf.length; i++){
       if (firstHalf[i] == secondHalf[i]){
         count++;
       }
@@ -51,3 +53,6 @@ var isPalindrome = function(head) {
 
 var ans = isPalindrome([1,2]);
 console.log(`Outside response: ${ans}`);
+
+var list = new LinkedList();
+list.test();
